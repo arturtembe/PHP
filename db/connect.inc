@@ -1,9 +1,9 @@
 <?php 
 
     //Connect database
-    $localhost="localhost:3306";
-    $root="root";
-    $pass="root";
+    $localhost="http://sql10.freesqldatabase.com/";
+    $root="sql10697024";
+    $pass="WtQmPLtyDd";
     $db="aula_extra";
     $tb_db="tb_task";
 
