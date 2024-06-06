@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - GTask</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Register</h1>
+        <form id="formRegister">
+
+            <label for="first">
+                Username:
+            </label>
+            <input type="text" 
+                id="username"
+                name="username" 
+                placeholder="Enter your Username" required>
+
+            <label for="first">
+                Email:
+            </label>
+            <input type="email" 
+                id="email"
+                name="email" 
+                placeholder="Enter your Email" minlength="8" required>
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password"
+                id="password" 
+                name="password" 
+                placeholder="Enter your Password" required>
+
+
+            <label for="password">
+                Re-Password:
+            </label>
+            <input type="password"
+                id="re_password" 
+                name="re_password" 
+                placeholder="Enter your Password" required>
+
+
+            <div class="wrap">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        <p>Already registered? 
+            <a href="login.html" 
+            style="text-decoration: none;">
+                sigin
+            </a>
+        </p>
+    </div>
+
+    <script type="module" src="./js/register.js"></script>
+</body>
+
+</html>
