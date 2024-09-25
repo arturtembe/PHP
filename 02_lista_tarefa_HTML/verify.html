@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="stylesheet" href="./css/all.min.css">
+	<link rel="stylesheet" href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<link rel="stylesheet" href="./css/verify.css">
+	<title>Verify</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="header">
+				<h1>
+					GTask
+				</h1>
+				<h2 style="color:black">
+					OTP Verification
+				</h2>
+			</div>
+			<div class="content" id="content">
+
+                <div class="otp-form-input">
+					<input type="text" name="email" 
+                    id="email" placeholder="Email" readonly>
+				</div>
+
+				<button id="generateBtn">
+					Generate OTP
+				</button>
+				<div id="otpForm" class="otp-form">
+					<input type="text" id="userOTP"
+					name="userOTP"
+						placeholder="Enter OTP">
+					<button id="otpVerifyFn">
+						Verify
+					</button>
+				</div>
+				<div id="successMessage" class="success-message">
+					<i class="fas fa-check"></i>
+					<p>Congratulations Geek! OTP is Verified!</p>
+				</div>
+				<div id="errorMessage" class="error-message"></div>
+				<div id="timer" class="timer"></div>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="./js/verifyOtp.js"></script>
+</body>
+
+</html>

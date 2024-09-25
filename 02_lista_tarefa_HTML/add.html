@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addd - GTask</title>
+    <link rel="stylesheet" href="./css/addEdit.css">
+</head>
+
+<body>
+    
+    <!-- ============== Header =============== -->
+    <header class="header" id="header">
+
+    </header>
+
+    <!-- ============== Main ================= -->
+    <main class="main" id="main">
+
+        <section class="section section-width">
+            <h1>Adicionar</h1>
+            
+            <form id="formAdd">
+    
+                <label for="conteudo" class="label">
+                    Conteudo:
+                </label>
+                <textarea id="conteudo"
+                name="conteudo">
+
+                </textarea>
+    
+                <fieldset>
+                    <legend>Notificar</legend>
+
+                    <div class="box-fieldset">
+
+                        <input type="radio" 
+                            id="notificar_sim"
+                            name="notificar" 
+                            value="Sim">
+                        <label for="notificar_sim"
+                        class="box-fieldset-label">Sim</label>
+
+                        <input type="radio" 
+                            id="notificar_nao"
+                            name="notificar" checked
+                            value="Sim" class="notificar_nao">
+                        <label for="notificar_nao" 
+                        class="box-fieldset-label">Nao</label>
+
+                    </div>
+                    
+                </fieldset>
+    
+                <label for="estado" class="label">
+                    Estado:
+                </label>
+                <select name="estado" id="estado">
+                    <option value="em andamento">Em andamento</option>
+                    <option value="pendente">Pendente</option>
+                    <option value="concluido">Concluido</option>
+                </select>
+    
+    
+                <label for="data" class="label">
+                    Data:
+                </label>
+                <input type="date"
+                    id="data" 
+                    name="data">
+    
+    
+                <div class="wrap">
+                    <button type="submit" class="btn-submit">Add</button>
+                    <button type="reset" class="btn-reset">Cancel</button>
+                </div>
+            </form>
+            
+        </section>
+
+    </main>
+
+    <!-- ============= Footer ================= -->
+
+    <footer class="footer" id="footer">
+
+    </footer>
+
+    <script type="module" src="./js/add.js"></script>
+
+</body>
+
+</html>
